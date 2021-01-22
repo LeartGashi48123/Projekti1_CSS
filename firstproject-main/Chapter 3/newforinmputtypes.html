@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New HTML5 Input Types</title>
+</head>
+<body>
+	<input type="button" value=" Go Back" onclick="history.back()"/> 
+
+	<h1>New HTML5 Input Types Demo</h1>
+
+	<p>New form demonstrates the new HTML5 input types and the placeholder, required and autofocus attributes.</p>
+
+	<form method="post" action="http://www.deitel.com">
+		<p>
+			<label>Color:
+				<input type="color" autofocus />
+				(Hexadecimal code such as #ADD8E6)
+			</label>
+		</p>
+
+		<p><label>Date:
+			<input type="date" />
+			(yyyy-mm-dd)
+			
+			</label>
+		 </p>
+
+		 <p>
+		 	<label>Datetime-local:
+		 		<input type="datetime-local" />
+		 		(yyyy-mm-ddThh:mmm, such as 2012-01-27T03:15)
+		 	</label>
+		 </p>
+		 <p>
+		 	<label>Month:
+		 		<input type="number"
+		 		min="0"
+		 		max="7"
+		 		step="1"
+		 		value="4" />
+		 	</label>(Enter a number between 0 and 7)
+		 </p>
+
+		 <p>
+		 	<label>Range:
+		 		0 <input type="range"
+		 		min="0"
+		 		max="20"
+		 		value="10" /> 20
+		 	</label>
+		 </p>
+
+		 <p>
+		 	<label>Search:
+		 		<input type="search" placeholder="search query" />
+		 	</label>
+		 </p>
+
+		 <p>
+		 	<label>Tel:
+		 		<input type="tel" placeholder="(###) ###-####" pattern="\(\d{3} +\d{4}" required />
+		 	</label>
+		 </p>
+
+		 <p>
+		 	<label>Time:
+		 		<input type="url" placeholder="http://www.domainname.com" />
+		 		(http://www.domainname.com)
+		 	</label>
+		 </p>
+
+		 <p>
+		 	<label>
+		 		<input type="week" />
+		 		(yyyy-Wnn, suach as 2012-W01)
+		 	</label>
+		 </p>
+
+		 <p>
+		 	<input type="submit" valie="Submit" />
+		 	<input type="reset" value="Clear" />
+		 </p>
+	</form>
+  </body>
+</html>
